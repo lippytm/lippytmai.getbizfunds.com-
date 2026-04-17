@@ -1,0 +1,129 @@
+/* =========================================================
+   lippytmai.getbizfunds.com  –  Main Script
+   ========================================================= */
+
+(function () {
+  'use strict';
+
+  /* ---- Mobile Navigation ---- */
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('navLinks');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      const isOpen = navLinks.classList.contains('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  }
+
+  /* ---- Navbar scroll shadow ---- */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (navbar) {
+      navbar.style.background = window.scrollY > 40
+        ? 'rgba(11,15,26,0.97)'
+        : 'rgba(11,15,26,0.85)';
+    }
+  });
+
+  /* ---- Intersection Observer – fade-in cards ---- */
+  const observerOpts = { threshold: 0.12 };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOpts);
+
+  document.querySelectorAll(
+    '.service-card, .diversity-card, .platform-tile, .platform-features li'
+  ).forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = `opacity 0.5s ease ${i * 0.07}s, transform 0.5s ease ${i * 0.07}s`;
+    observer.observe(el);
+  });
+
+  document.addEventListener('animationend', () => {}, { once: true });
+
+  // Add .visible class effect via CSS
+  const styleTag = document.createElement('style');
+  styleTag.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
+  document.head.appendChild(styleTag);
+
+  /* ---- Contact Form ---- */
+  const form    = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Simulate send (swap with real endpoint / mailto / formspree)
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        form.style.display = 'none';
+        if (success) success.style.display = 'block';
+      }, 1200);
+    });
+  }
+
+  /* ---- Animated counters ---- */
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1800;
+    const step = target / (duration / 16);
+    let current = 0;
+
+    const tick = () => {
+      current += step;
+      if (current >= target) {
+        el.textContent = target + suffix;
+        return;
+      }
+      el.textContent = Math.floor(current) + suffix;
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  const counters = document.querySelectorAll('.stat-value[data-target]');
+  if (counters.length) {
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => statsObserver.observe(c));
+  }
+
+  /* ---- Active nav link on scroll ---- */
+  const sections = document.querySelectorAll('section[id]');
+  const links    = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
+    });
+    links.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current
+        ? 'var(--clr-white)'
+        : '';
+    });
+  }, { passive: true });
+})();
