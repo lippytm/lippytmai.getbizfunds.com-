@@ -272,16 +272,18 @@
 
       <div class="contact-form">
         <h3>Send a Message</h3>
-        <form id="contactForm" novalidate>
+        <form id="contactForm">
 
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required aria-describedby="name-error" />
+            <span id="name-error" class="field-error" role="alert" aria-live="polite"></span>
           </div>
 
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required aria-describedby="email-error" />
+            <span id="email-error" class="field-error" role="alert" aria-live="polite"></span>
           </div>
 
           <div class="form-group">
@@ -299,7 +301,8 @@
 
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us about your project or question…" required></textarea>
+            <textarea id="message" name="message" placeholder="Tell us about your project or question…" required aria-describedby="message-error"></textarea>
+            <span id="message-error" class="field-error" role="alert" aria-live="polite"></span>
           </div>
 
           <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>

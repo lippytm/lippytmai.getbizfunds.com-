@@ -52,8 +52,6 @@
     observer.observe(el);
   });
 
-  document.addEventListener('animationend', () => {}, { once: true });
-
   // Add .visible class effect via CSS
   const styleTag = document.createElement('style');
   styleTag.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
@@ -63,9 +61,38 @@
   const form    = document.getElementById('contactForm');
   const success = document.getElementById('formSuccess');
 
+  function showFieldError(fieldId, msg) {
+    const errEl = document.getElementById(fieldId + '-error');
+    if (errEl) errEl.textContent = msg;
+  }
+  function clearFieldErrors() {
+    document.querySelectorAll('.field-error').forEach(el => { el.textContent = ''; });
+  }
+
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      clearFieldErrors();
+
+      const name    = form.querySelector('#name');
+      const email   = form.querySelector('#email');
+      const message = form.querySelector('#message');
+      let valid = true;
+
+      if (!name.value.trim()) {
+        showFieldError('name', 'Please enter your name.');
+        valid = false;
+      }
+      if (!email.value.trim() || !email.validity.valid) {
+        showFieldError('email', 'Please enter a valid email address.');
+        valid = false;
+      }
+      if (!message.value.trim()) {
+        showFieldError('message', 'Please enter a message.');
+        valid = false;
+      }
+      if (!valid) return;
+
       // Simulate send (swap with real endpoint / mailto / formspree)
       const btn = form.querySelector('button[type="submit"]');
       btn.textContent = 'Sending…';
