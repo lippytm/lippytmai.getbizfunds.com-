@@ -138,19 +138,26 @@
     counters.forEach(c => statsObserver.observe(c));
   }
 
-  /* ---- Active nav link on scroll ---- */
+  /* ---- Active nav link on scroll (throttled) ---- */
   const sections = document.querySelectorAll('section[id]');
   const links    = document.querySelectorAll('.nav-links a');
+  let scrollTicking = false;
 
   window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(sec => {
-      if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
-    });
-    links.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current
-        ? 'var(--clr-white)'
-        : '';
-    });
+    if (!scrollTicking) {
+      requestAnimationFrame(() => {
+        let current = '';
+        sections.forEach(sec => {
+          if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
+        });
+        links.forEach(a => {
+          a.style.color = a.getAttribute('href') === '#' + current
+            ? 'var(--clr-white)'
+            : '';
+        });
+        scrollTicking = false;
+      });
+      scrollTicking = true;
+    }
   }, { passive: true });
 })();
