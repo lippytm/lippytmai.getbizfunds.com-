@@ -1,0 +1,64 @@
+repo:
+  name: REPO_NAME
+  role: product
+  maturity: active
+  owner: OWNER_OR_TEAM
+  last_reviewed: YYYY-MM-DD
+
+purpose:
+  summary: Product or service implementation repository.
+  primary_users:
+    - clients
+    - operators
+    - builders
+  primary_outcomes:
+    - delivery
+    - implementation
+    - reusable_outputs
+
+capabilities:
+  brand: optional
+  crm: optional
+  chatbots: yes
+  voice: optional
+  automation: optional
+  education: optional
+  entertainment: optional
+  prompting: yes
+  knowledge: yes
+  workflow: optional
+  products: yes
+  partnerships: optional
+  analytics: optional
+  governance: optional
+
+inputs:
+  repos:
+    - front_door_repo
+    - workflow_repo
+    - knowledge_repo
+  assets:
+    - prompts
+    - templates
+    - workflows
+
+outputs:
+  repos:
+    - front_door_repo
+    - control_tower_repo
+    - knowledge_repo
+  assets:
+    - delivery_docs
+    - implementation_assets
+    - product_guides
+
+shared_standards:
+  taxonomy_version: v1
+  lifecycle_version: v1
+  prompt_naming_version: v1
+  status_template_version: v1
+
+next_steps:
+  - Clarify owned product scope
+  - Expose reusable implementation assets
+  - Improve handoff from front-door repos
