@@ -1,0 +1,2 @@
+repo_name,role,maturity,owner,last_reviewed,overall_health,primary_capability,current_priority,main_dependency,reusable_assets,status_summary,next_best_action
+REPO_NAME,front_door,active,OWNER_OR_TEAM,YYYY-MM-DD,green,crm,improve interoperability,CONTROL_TOWER_OR_CORE_REPO,"prompts, templates, schemas",short status summary,clear next best action
