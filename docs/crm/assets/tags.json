@@ -1,0 +1,84 @@
+{
+  "source_tags": [
+    "source_website",
+    "source_instagram",
+    "source_facebook",
+    "source_manychat",
+    "source_myclaw",
+    "source_botbuilders",
+    "source_referral",
+    "source_organic",
+    "source_direct"
+  ],
+  "intent_tags": [
+    "intent_growth",
+    "intent_chatbot",
+    "intent_automation",
+    "intent_support",
+    "intent_strategy",
+    "intent_education",
+    "intent_entertainment",
+    "intent_partner",
+    "intent_affiliate"
+  ],
+  "relationship_tags": [
+    "relationship_lead",
+    "relationship_prospect",
+    "relationship_client",
+    "relationship_customer",
+    "relationship_student",
+    "relationship_support_user",
+    "relationship_advocate",
+    "relationship_partner"
+  ],
+  "mode_tags": [
+    "mode_type",
+    "mode_voice",
+    "mode_hybrid",
+    "mode_human_assisted",
+    "mode_ai_first"
+  ],
+  "stage_tags": [
+    "stage_new",
+    "stage_engaged",
+    "stage_qualified",
+    "stage_booked",
+    "stage_active",
+    "stage_nurture",
+    "stage_at_risk",
+    "stage_advocate",
+    "stage_inactive",
+    "stage_reactivated"
+  ],
+  "value_tags": [
+    "value_low",
+    "value_mid",
+    "value_high",
+    "value_recurring",
+    "value_partner"
+  ],
+  "journey_tags": [
+    "archetype_builder",
+    "archetype_explorer",
+    "archetype_strategist",
+    "archetype_operator",
+    "archetype_guide",
+    "archetype_creator",
+    "archetype_partner"
+  ],
+  "risk_tags": [
+    "risk_churn",
+    "risk_confusion",
+    "risk_support_heavy",
+    "risk_no_show",
+    "risk_low_response"
+  ],
+  "service_tags": [
+    "service_growth_strategy",
+    "service_chatbot_setup",
+    "service_automation_setup",
+    "service_support",
+    "service_education",
+    "service_partnering"
+  ]
+}
