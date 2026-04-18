@@ -1,0 +1,74 @@
+repo:
+  name: "REPO_NAME"
+  role: "front_door | brand | workflow | product | knowledge | innovation | control_tower"
+  maturity: "idea | draft | active | stable | archived"
+  owner: "OWNER_OR_TEAM"
+  last_reviewed: "YYYY-MM-DD"
+
+purpose:
+  summary: "Short purpose statement"
+  primary_users:
+    - "founders"
+    - "operators"
+  primary_outcomes:
+    - "clarity"
+    - "automation"
+
+capabilities:
+  brand: false
+  crm: false
+  chatbots: false
+  voice: false
+  automation: false
+  education: false
+  entertainment: false
+  prompting: false
+  knowledge: false
+  workflow: false
+  products: false
+  partnerships: false
+  analytics: false
+  governance: false
+
+inputs:
+  repos:
+    - "RELATED_REPO_NAME"
+  assets:
+    - "prompts"
+    - "schemas"
+  data:
+    - "lead summaries"
+
+outputs:
+  repos:
+    - "RELATED_REPO_NAME"
+  assets:
+    - "docs"
+    - "templates"
+  data:
+    - "status reports"
+
+shared_standards:
+  taxonomy_version: "v1"
+  lifecycle_version: "v1"
+  prompt_naming_version: "v1"
+  status_template_version: "v1"
+
+key_files:
+  - "README.md"
+  - "CAPABILITIES.md"
+  - "INTEGRATIONS.md"
+  - "ROADMAP.md"
+  - "STATUS.md"
+
+integration_rules:
+  preserve_original_source: true
+  use_shared_lifecycle_names: true
+  use_shared_prompt_prefixes: true
+  expose_reusable_assets: true
+  publish_status_summary: true
+
+next_steps:
+  - "Define capability declaration"
+  - "Map related repos"
+  - "Publish first status summary"
