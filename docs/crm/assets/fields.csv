@@ -1,0 +1,79 @@
+field_name,label,field_type,required_stage,example_value,notes
+contact_id,Contact ID,text/system,new lead,CNT-1001,unique record id
+account_id,Account ID,text/system,qualified,ACC-2001,business-level record id
+first_name,First Name,text,new lead,Charles,person-level field
+last_name,Last Name,text,optional early,Lipshay,person-level field
+full_name,Full Name,text/formula,qualified,Charles Lipshay,may be concatenated from first and last
+email,Email,email,new lead,name@example.com,one reliable contact method required
+mobile_phone,Mobile Phone,phone,optional early,+17750000000,useful for voice or SMS later
+business_name,Business Name,text,qualified,lippytm.ai,links person to business account
+website_url,Website URL,url,qualified,https://lippytmai.getbizfunds.com,account context
+timezone,Timezone,select,qualified,America/Los_Angeles,supports booking and cadence
+preferred_language,Preferred Language,select,optional,English,future multilingual support
+preferred_contact_method,Preferred Contact Method,select,qualified,email,email phone chat voice
+preferred_interaction_mode,Preferred Interaction Mode,select,qualified,hybrid,type voice hybrid
+accessibility_notes,Accessibility Notes,long_text,optional,prefers voice,service quality support
+lead_source,Lead Source,select,new lead,website,original source field
+lead_source_detail,Lead Source Detail,text,new lead,homepage chat widget,more precise source
+source_platform,Source Platform,select,new lead,website,website facebook instagram etc
+source_page,Source Page,text,optional early,/start-here,preserve entry page
+source_campaign,Source Campaign,text,optional,spring_launch_2026,campaign attribution
+source_keyword,Source Keyword,text,optional,chatbot automation,SEO or ad support
+first_touch_channel,First Touch Channel,select,new lead,type_chat,initial interaction mode
+latest_touch_channel,Latest Touch Channel,select,active,voice,most recent interaction mode
+primary_intent,Primary Intent,select,new lead,automation,main reason they came
+secondary_intent,Secondary Intent,select,qualified,chatbot,optional expansion signal
+service_interest_primary,Primary Service Interest,select,qualified,myclaw_workflow_setup,map to offer
+desired_outcome,Desired Outcome,long_text,qualified,faster follow-up and less lag,use plain language
+urgency_level,Urgency Level,select,qualified,medium,low medium high
+budget_band,Budget Band,select,optional,starter,starter growth premium custom
+timeline_to_start,Timeline to Start,select,qualified,within_30_days,supports routing
+complexity_level,Complexity Level,select,qualified,medium,supports handoff logic
+estimated_value,Estimated Value,currency/number,sales,2500,optional early
+offer_match,Offer Match,select,qualified,automation_setup_package,next best fit
+lifecycle_stage,Lifecycle Stage,select,new lead,engaged,high-level stage
+pipeline_name,Pipeline Name,select,qualified,lead_intake,separate pipeline family
+pipeline_stage,Pipeline Stage,select,qualified,qualified,exact current stage
+lifecycle_owner,Lifecycle Owner,user/text,qualified,ops_manager,owner when human needed
+next_best_action,Next Best Action,text,new lead,invite_to_booking,cannot be empty for active records
+next_best_action_due_date,Next Best Action Due Date,date,qualified,2026-04-25,accountability field
+last_meaningful_touch_date,Last Meaningful Touch Date,date,engaged,2026-04-18,relationship freshness
+last_human_touch_date,Last Human Touch Date,date,optional,2026-04-18,important for high-value accounts
+conversation_id,Conversation ID,text/system,engaged,CONV-3001,links sessions and summaries
+session_count,Session Count,number,engaged,3,number of user sessions
+last_bot_mode,Last Bot Mode,select,engaged,hybrid,last interaction mode used
+transcript_reference,Transcript Reference,url/text,optional,transcripts/conv-3001.md,store transcript location
+summary_short,Summary Short,long_text,engaged,Needs automation support and fast next steps,readable in under 30 seconds
+summary_detailed,Summary Detailed,long_text,qualified,Longer qualification and context summary,for operator review
+objections_detected,Objections Detected,long_text,optional,concerned about complexity and time,helps human handoff
+sentiment_last,Sentiment Last,select,optional,positive,positive mixed negative neutral
+human_requested_flag,Human Requested Flag,boolean,optional,true,important escalation signal
+escalation_reason,Escalation Reason,text,optional,pricing nuance,why handoff occurred
+service_record_id,Service Record ID,text/system,client,SRV-4001,service delivery record
+service_type,Service Type,select,client,automation_setup,service or package type
+package_level,Package Level,select,client,growth,starter growth premium custom
+onboarding_status,Onboarding Status,select,client,intake_requested,client lifecycle support
+milestone_current,Current Milestone,text,active client,kickoff_complete,visible progress marker
+milestone_due_next,Next Milestone Due,date,active client,2026-04-30,delivery planning
+service_health_status,Service Health Status,select,active client,healthy,healthy watch at_risk
+active_support_flag,Active Support Flag,boolean,active client,true,open support relationship
+renewal_eligibility,Renewal Eligibility,boolean/select,recurring,true,supports retention logic
+satisfaction_status,Satisfaction Status,select,client,positive,positive mixed negative
+satisfaction_score_internal,Satisfaction Score Internal,number,active client,4,1 to 5 internal score
+csat_last,CSAT Last,number,support/client,5,optional direct feedback
+churn_risk_flag,Churn Risk Flag,boolean,active client,false,visible retention risk
+testimonial_candidate_flag,Testimonial Candidate Flag,boolean,satisfied client,true,advocacy trigger
+referral_candidate_flag,Referral Candidate Flag,boolean,satisfied client,true,advocacy trigger
+upsell_interest_level,Upsell Interest Level,select,active client,medium,low medium high
+recurring_support_interest,Recurring Support Interest,select,active client,high,strong retention signal
+expansion_potential_score,Expansion Potential Score,number,active client,8,1 to 10 internal scale
+archetype_primary,Primary Archetype,select,optional,builder,development guidance field
+archetype_secondary,Secondary Archetype,select,optional,strategist,development support
+journey_stage,Journey Stage,select,optional,application,learning or development stage
+development_progress_score,Development Progress Score,number,optional,6,1 to 10 internal scale
+innovation_session_count,Innovation Session Count,number,optional,2,brainstorming engagement tracking
+education_progress_stage,Education Progress Stage,select,optional,guided_learning,education journey support
+entertainment_engagement_level,Entertainment Engagement Level,select,optional,medium,creative engagement layer
+business_development_progress,Business Development Progress,select,optional,offer_selection,tracks structured growth path
+partner_interest_level,Partner Interest Level,select,optional,low,referral affiliate partner signal
+affiliate_interest_level,Affiliate Interest Level,select,optional,medium,partner growth signal
