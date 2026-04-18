@@ -1,0 +1,63 @@
+repo:
+  name: REPO_NAME
+  role: workflow
+  maturity: active
+  owner: OWNER_OR_TEAM
+  last_reviewed: YYYY-MM-DD
+
+purpose:
+  summary: Workflow and operations support repository.
+  primary_users:
+    - operators
+    - builders
+    - automation_owners
+  primary_outcomes:
+    - routing
+    - automation
+    - execution_support
+
+capabilities:
+  brand: no
+  crm: optional
+  chatbots: optional
+  voice: optional
+  automation: yes
+  education: optional
+  entertainment: no
+  prompting: optional
+  knowledge: yes
+  workflow: yes
+  products: optional
+  partnerships: optional
+  analytics: optional
+  governance: optional
+
+inputs:
+  repos:
+    - front_door_repo
+    - knowledge_repo
+  assets:
+    - prompts
+    - sop_docs
+    - schemas
+
+outputs:
+  repos:
+    - front_door_repo
+    - product_repo
+    - control_tower_repo
+  assets:
+    - workflow_docs
+    - routing_rules
+    - automation_patterns
+
+shared_standards:
+  taxonomy_version: v1
+  lifecycle_version: v1
+  prompt_naming_version: v1
+  status_template_version: v1
+
+next_steps:
+  - Expose reusable workflow assets
+  - Improve integration notes
+  - Publish clearer status summaries
