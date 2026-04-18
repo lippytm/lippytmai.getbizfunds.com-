@@ -1,0 +1,67 @@
+repo:
+  name: REPO_NAME
+  role: front_door
+  maturity: active
+  owner: OWNER_OR_TEAM
+  last_reviewed: YYYY-MM-DD
+
+purpose:
+  summary: Public-facing front door and relationship routing hub.
+  primary_users:
+    - founders
+    - operators
+    - clients
+    - partners
+  primary_outcomes:
+    - clarity
+    - lead_capture
+    - service_navigation
+    - ecosystem_routing
+
+capabilities:
+  brand: yes
+  crm: yes
+  chatbots: yes
+  voice: planned
+  automation: yes
+  education: yes
+  entertainment: optional
+  prompting: yes
+  knowledge: yes
+  workflow: yes
+  products: yes
+  partnerships: yes
+  analytics: yes
+  governance: yes
+
+inputs:
+  repos:
+    - lippytm.ai
+    - workflow_repo
+    - product_repo
+    - knowledge_repo
+  assets:
+    - prompts
+    - schemas
+    - service_docs
+
+outputs:
+  repos:
+    - workflow_repo
+    - product_repo
+    - control_tower_repo
+  assets:
+    - public_guidance
+    - routing_docs
+    - crm_assets
+
+shared_standards:
+  taxonomy_version: v1
+  lifecycle_version: v1
+  prompt_naming_version: v1
+  status_template_version: v1
+
+next_steps:
+  - Improve routing clarity
+  - Expose reusable CRM assets
+  - Strengthen cross-repo references
