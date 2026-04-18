@@ -1,0 +1,9 @@
+{
+  "lead_intake": ["new", "welcomed", "intent_identified", "qualified", "ready_for_booking", "nurture", "dormant"],
+  "sales": ["discovery", "offer_matched", "call_booked", "proposal_or_plan", "decision_pending", "won", "lost", "deferred"],
+  "onboarding": ["welcome_sent", "intake_requested", "intake_complete", "assets_received", "setup_in_progress", "first_milestone", "fully_active"],
+  "delivery": ["active", "awaiting_client", "in_review", "needs_intervention", "completed"],
+  "support": ["new_issue", "triage", "in_progress", "waiting_on_user", "resolved", "follow_up_complete"],
+  "retention": ["new_client", "stable", "growth_opportunity", "at_risk", "renewed", "paused", "closed"],
+  "advocacy_partner": ["candidate", "invited", "approved", "active", "dormant"]
+}
