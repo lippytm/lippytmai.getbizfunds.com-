@@ -1,0 +1,57 @@
+repo:
+  name: REPO_NAME
+  role: knowledge
+  maturity: active
+  owner: OWNER_OR_TEAM
+  last_reviewed: YYYY-MM-DD
+
+purpose:
+  summary: Knowledge and standards repository.
+  primary_users:
+    - builders
+    - operators
+    - learners
+    - repo_owners
+  primary_outcomes:
+    - reusable_guidance
+    - standards_alignment
+    - prompt_reuse
+
+capabilities:
+  education: yes
+  prompting: yes
+  knowledge: yes
+  governance: yes
+
+inputs:
+  repos:
+    - front_door_repo
+    - workflow_repo
+    - product_repo
+  assets:
+    - lessons
+    - standards
+    - prompts
+
+outputs:
+  repos:
+    - front_door_repo
+    - workflow_repo
+    - product_repo
+    - control_tower_repo
+  assets:
+    - standards_docs
+    - prompt_libraries
+    - templates
+    - playbooks
+
+shared_standards:
+  taxonomy_version: v1
+  lifecycle_version: v1
+  prompt_naming_version: v1
+  status_template_version: v1
+
+next_steps:
+  - Clarify ownership of standards
+  - Expose reusable prompts and templates
+  - Reduce duplicated guidance across repos
