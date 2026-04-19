@@ -1,0 +1,11 @@
+kpi_name,domain,definition,review_frequency,primary_use,notes
+first_touch_clarity_score,cx,measure of whether first interaction is clear and confidence-building,monthly,cx improvement,can combine survey and internal review
+next_action_visibility_score,cx,measure of whether next action is visible and understandable,monthly,lifecycle continuity,important for crm and front-door
+handoff_context_quality,cx,measure of whether handoffs preserve enough context,monthly,support and workflow quality,important for human trust
+support_resolution_confidence,support,measure of whether support resolution feels complete,enabling weekly and monthly reviews,support recovery,can use follow-up pulse
+satisfaction_signal_strength,satisfaction,measure of how visible and recent satisfaction signals are,monthly,client success,prevents silent risk
+churn_risk_visibility,retention,measure of whether at-risk relationships are being surfaced,weekly,retention support,important for intervention timing
+renewal_readiness_signal,retention,measure of whether renewal confidence factors are visible,monthly,renewal planning,helps loyalty and continuity
+referral_readiness_signal,growth,measure of whether a strong relationship is ready for advocacy asks,monthly,advocacy support,avoid asking too early
+crm_next_action_quality,crm,measure of whether recommended next actions are practical and timely,weekly,lifecycle hygiene,important for AI CRM outputs
+documentation_transparency_score,governance,measure of whether key documentation and ownership are visible,monthly,cognitive diagnostics and trust,supports scanability and governance
