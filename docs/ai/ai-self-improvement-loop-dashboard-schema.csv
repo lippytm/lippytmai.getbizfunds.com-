@@ -1,0 +1,10 @@
+dashboard_name,metric_name,definition,review_frequency,owner,primary_use,notes
+self_improvement_dashboard,repo_health_improvement_rate,rate at which repo health score improves over review cycles,monthly,control_tower,measure improvement momentum,shows whether reviews lead to better surfaces
+self_improvement_dashboard,standards_drift_reduction_rate,rate at which drift scores improve over time,monthly,knowledge,measure standards stabilization,good for rollout quality
+self_improvement_dashboard,handoff_quality_improvement_rate,rate at which handoff score improves over time,monthly,workflow,measure continuity improvement,important for trust and execution
+self_improvement_dashboard,asset_reuse_growth_rate,rate at which reusable assets become more visible or reused,monthly,knowledge,measure reuse gains,reduces duplicate effort
+self_improvement_dashboard,crm_next_action_improvement_rate,rate at which CRM next-action quality improves,weekly,front_door,measure CRM continuity improvement,important for CX
+self_improvement_dashboard,satisfaction_visibility_improvement_rate,rate at which satisfaction and trust signals become more visible,monthly,front_door,measure client-experience governance,helps reduce silent churn
+self_improvement_dashboard,learning_promotion_rate,rate at which durable lessons are promoted into stronger repos,monthly,knowledge,measure learning-loop health,reduces stranded insights
+self_improvement_dashboard,self_healing_followthrough_rate,rate at which identified healing actions are completed,monthly,control_tower,measure repair discipline,prevents review theater
+self_improvement_dashboard,review_to_action_conversion_rate,rate at which reviews produce documented next actions and followthrough,monthly,control_tower,measure operational discipline,key governance signal
