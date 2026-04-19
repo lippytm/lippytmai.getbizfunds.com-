@@ -1,0 +1,56 @@
+repo:
+  name: REPO_NAME
+  role: innovation
+  maturity: draft
+  owner: OWNER_OR_TEAM
+  last_reviewed: YYYY-MM-DD
+
+purpose:
+  summary: Experiment and prototype repository.
+  primary_users:
+    - builders
+    - experimenters
+    - prompt_designers
+  primary_outcomes:
+    - idea_validation
+    - fast_learning
+    - portable_lessons
+
+capabilities:
+  prompting: yes
+  knowledge: yes
+  analytics: optional
+  governance: optional
+
+inputs:
+  repos:
+    - front_door_repo
+    - workflow_repo
+    - product_repo
+    - knowledge_repo
+  assets:
+    - opportunity_signals
+    - standards_refs
+    - prompts
+
+outputs:
+  repos:
+    - knowledge_repo
+    - product_repo
+    - front_door_repo
+    - control_tower_repo
+  assets:
+    - experiment_notes
+    - validated_concepts
+    - lesson_summaries
+
+shared_standards:
+  taxonomy_version: v1
+  lifecycle_version: v1
+  prompt_naming_version: v1
+  status_template_version: v1
+
+next_steps:
+  - Improve experiment labeling
+  - Improve lesson capture
+  - Improve promotion of validated ideas into stronger repos
