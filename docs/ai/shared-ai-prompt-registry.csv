@@ -1,0 +1,15 @@
+prompt_name,role_scope,domain,mode,purpose,status,source,notes
+ai-repo-audit-guided-v1,all,governance,guided,review repo health and missing standards,active,shared,core audit prompt
+ai-standards-alignment-review-v1,all,standards,guided,check standards alignment and drift,active,shared,used in monthly review
+ai-fleet-rollup-summary-v1,control_tower,governance,direct,summarize fleet health and risks,active,shared,for rollups
+ai-asset-reuse-discovery-v1,all,assets,guided,find reusable assets across repos,active,shared,reuse discovery
+ai-next-best-upgrade-v1,all,upgrade,direct,recommend highest leverage next action,active,shared,continuous improvement
+ai-crm-record-review-v1,front_door,crm,guided,review crm record quality and next step,draft,shared,crm-focused
+ai-crm-lifecycle-gap-review-v1,front_door,crm,guided,detect lifecycle gaps and missing fields,draft,shared,crm audit
+ai-crm-satisfaction-risk-review-v1,front_door,crm,direct,detect churn or satisfaction risk,draft,shared,client success support
+ai-workflow-upgrade-review-v1,workflow,workflow,guided,review workflow clarity and reuse,active,shared,workflow improvement
+ai-product-delivery-readiness-v1,product,product,guided,review product readiness and delivery assets,draft,shared,product quality
+ai-knowledge-canonical-review-v1,knowledge,knowledge,guided,find duplicated guidance and canonical source gaps,draft,shared,knowledge hygiene
+ai-innovation-promotion-review-v1,innovation,innovation,guided,decide what to promote or retire,active,shared,innovation governance
+ai-frontdoor-routing-review-v1,front_door,website,guided,improve public routing and handoffs,draft,shared,website/front-door improvement
+ai-controltower-priority-review-v1,control_tower,governance,direct,compare repo priorities and risks,draft,shared,coordination support
