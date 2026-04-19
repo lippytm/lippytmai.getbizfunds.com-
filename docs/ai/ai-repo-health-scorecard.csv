@@ -1,0 +1,11 @@
+score_area,definition,score_range,review_frequency,primary_use,notes
+role_clarity,how clear the repo role is from visible surfaces,1-5,monthly,scanability and routing,important for all roles
+purpose_visibility,how quickly the repo purpose is understandable,1-5,monthly,clarity and onboarding,important for humans and AI
+status_freshness,how current and useful the status surface is,1-5,monthly,fleet visibility,important for control-tower review
+roadmap_visibility,how clear the next direction is,1-5,monthly,planning quality,helps prioritization
+integration_clarity,how clearly dependencies and outputs are shown,1-5,monthly,interoperability quality,key for cross-repo use
+asset_visibility,how easy it is to find reusable assets,1-5,monthly,reuse and duplication reduction,key operational signal
+prompt_visibility,how easy it is to find and understand prompts,1-5,monthly,prompt governance,important for AI systems
+ownership_visibility,how clearly canonical ownership is shown,1-5,monthly,governance and trust,reduces ambiguity
+next_action_clarity,how clear the next best action is,1-5,weekly,continuity and execution,high leverage small fix
+standards_alignment,how well the repo matches shared standards,1-5,monthly,standards rollout and drift detection,good for audits
