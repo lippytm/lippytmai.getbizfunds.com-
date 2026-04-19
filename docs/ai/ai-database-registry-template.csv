@@ -1,0 +1,7 @@
+registry_name,registry_type,primary_owner_role,primary_owner_repo,review_frequency,main_fields,primary_use,notes
+prompt_registry,catalog,knowledge,lippytmai.getbizfunds.com-,monthly,prompt_name|role_scope|domain|mode|purpose|status,prompt governance and reuse,core AI asset registry
+assets_registry,catalog,knowledge,lippytmai.getbizfunds.com-,monthly,asset_name|asset_type|canonical_role|canonical_repo|status,asset ownership and reuse,important for transparency
+fleet_index,index,control_tower,lippytmai.getbizfunds.com-,monthly,repo_name|role|priority_phase|notes,fleet rollout and visibility,seed for control-tower use
+cx_kpi_registry,kpi_registry,front_door,lippytmai.getbizfunds.com-,monthly,kpi_name|domain|definition|review_frequency,customer experience review,helps CRM and CX governance
+self_healing_actions_registry,action_registry,control_tower,lippytmai.getbizfunds.com-,monthly,action_name|trigger|goal|output,self-healing guidance,good for autonomous review loops
+learning_promotion_registry,learning_registry,knowledge,lippytmai.getbizfunds.com-,monthly,item_name|current_role|target_role|promotion_trigger,knowledge promotion and reuse,helps prevent stranded learning
