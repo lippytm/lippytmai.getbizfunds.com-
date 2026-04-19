@@ -1,0 +1,9 @@
+kpi_name,domain,definition,review_frequency,primary_use,notes
+role_clarity_score,governance,measure of how clearly repo roles are declared and visible,monthly,scanability and governance,important for all repos
+status_freshness_score,governance,measure of how current and useful status surfaces are,monthly,fleet visibility,important for control-tower review
+ownership_visibility_score,governance,measure of how clearly canonical ownership is shown,monthly,trust and reuse,reduces ambiguity
+standards_alignment_score,governance,measure of how well repos match shared standards,monthly,drift reduction,important for rollout health
+asset_exposure_score,governance,measure of how clearly reusable assets are surfaced,monthly,reuse improvement,helps reduce hidden value
+prompt_governance_score,governance,measure of prompt naming and indexing quality,monthly,prompt portability,important for AI systems
+review_followthrough_score,governance,measure of whether review outputs result in actions,monthly,improvement discipline,prevents review theater
+transparency_surface_score,governance,measure of how visible purpose role status roadmap and next action are,monthly,documentation transparency,important for cognitive diagnostics
