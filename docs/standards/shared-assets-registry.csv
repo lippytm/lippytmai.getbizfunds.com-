@@ -1,0 +1,11 @@
+asset_name,asset_type,canonical_role,canonical_repo,primary_use,secondary_use,status,notes
+shared_taxonomy_reference,standards,knowledge,lippytmai.getbizfunds.com-,shared naming and terminology,fleet alignment,active,core standards surface
+shared_lifecycle_naming_guide,standards,knowledge,lippytmai.getbizfunds.com-,lifecycle consistency,crm and repo workflow alignment,active,used across repo roles
+shared_prompt_naming_convention,standards,knowledge,lippytmai.getbizfunds.com-,prompt portability,prompt review and governance,active,shared prompt system support
+fleet_rollup_template,report,control_tower,lippytmai.getbizfunds.com-,fleet visibility,status coordination,active,seed for future control-tower use
+repo_interoperability_manifest,manifest,knowledge,lippytmai.getbizfunds.com-,repo metadata and interoperability,rollup support,active,role-aware metadata starter
+crm_fields_registry,schema,front_door,lippytmai.getbizfunds.com-,crm setup and lifecycle support,asset reuse across crm-aware repos,active,copy-paste structured asset
+crm_tags_registry,schema,front_door,lippytmai.getbizfunds.com-,crm tagging consistency,reporting and lifecycle support,active,json asset
+crm_pipelines_registry,schema,front_door,lippytmai.getbizfunds.com-,crm stage structure,lifecycle hygiene support,active,json asset
+autonomous_ai_prompt_library,prompts,knowledge,lippytmai.getbizfunds.com-,ai review and upgrade support,autonomous maintenance loops,active,ai layer core library
+role_pack_library,templates,knowledge,lippytmai.getbizfunds.com-,repo bootstrapping and upgrades,fleet rollout,active,role-based deployment system
