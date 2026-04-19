@@ -1,0 +1,8 @@
+dashboard_name,metric_name,definition,review_frequency,owner,primary_use,notes
+support_recovery_dashboard,issue_clarity_score,measure of how clearly support issues are summarized,weekly,support,better triage and trust,important first improvement point
+support_recovery_dashboard,ownership_clarity_score,measure of how clearly next owner is visible,weekly,support,accountability and followthrough,reduces stalled cases
+support_recovery_dashboard,recovery_plan_visibility,measure of whether corrective action is visible and understandable,weekly,support,recovery quality,important for trust repair
+support_recovery_dashboard,resolution_confidence_score,measure of whether resolutions feel complete and understandable,weekly,support,resolution quality,helps detect weak closures
+support_recovery_dashboard,trust_repair_signal,measure of whether trust repair actions are visible when needed,weekly,client_success,relationship protection,important after negative experiences
+support_recovery_dashboard,repeated_issue_detection_rate,rate at which recurring issues are recognized and surfaced,monthly,support,learning and reuse,helps create reusable fixes
+support_recovery_dashboard,followup_completion_rate,rate at which follow-up after recovery is completed,monthly,support,recovery discipline,prevents silent damage
