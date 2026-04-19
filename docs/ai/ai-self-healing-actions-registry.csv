@@ -1,0 +1,11 @@
+action_name,domain,trigger,primary_goal,typical_output,notes
+restore_status_visibility,governance,missing or stale status surface,restore scanability,updated status summary,improves fleet visibility
+restore_next_action_visibility,crm_or_repo,missing next action,restore continuity,clear next-best action,high leverage small fix
+restore_ownership_visibility,governance,unclear owner or canonical source,reduce ambiguity,owner or source note,important for trust
+repair_cross_repo_reference,interoperability,broken or weak repo relationship,restore handoff clarity,updated integration reference,improves continuity
+surface_hidden_asset,assets,reusable asset not exposed,improve reuse,asset entry or asset file update,reduces duplication
+promote_durable_lesson,learning,innovation lesson mature enough,improve knowledge reuse,promotion recommendation or migrated asset,avoid stranded learning
+reindex_prompt_inventory,prompting,prompts hard to find or compare,improve prompt transparency,updated prompt inventory,helps governance
+flag_handoff_for_human_review,support_or_workflow,high-risk ambiguity or trust issue,reduce harm,review recommendation,good for sensitive changes
+refresh_lifecycle_state,crm,stage or timing stale,restore continuity,updated lifecycle note or next step,important for client experience
+refresh_satisfaction_signal,crm_or_client_success,satisfaction visibility stale,improve risk detection,updated satisfaction note or pulse check,prevents silent churn
