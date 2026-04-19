@@ -1,0 +1,9 @@
+item_name,current_role,target_role,promotion_trigger,required_cleanup,success_signal,notes
+prototype_prompt,innovation,knowledge,prompt proves reusable and stable,naming cleanup and source clarity,listed in canonical prompt library,avoid leaving useful prompts stranded
+lesson_summary,innovation,knowledge,lesson applies beyond one experiment,clarify audience and ownership,referenced in knowledge assets,strong for learning reuse
+workflow_pattern,workflow,knowledge_or_workflow,pattern reused more than once,document trigger and output,added to workflows inventory,portable execution logic
+crm_pattern,front_door,knowledge_or_front_door,crm pattern used repeatedly,standardize field names and next actions,added to CRM guidance,helps continuity
+public_routing_pattern,front_door,front_door_or_knowledge,routing pattern improves navigation,clarify repo relationships,referenced in front-door assets,public clarity gain
+product_setup_guide,product,product_or_knowledge,guide reused across implementations,scope cleanup and versioning,listed in product assets,delivery reuse gain
+standards_note,local_repo,knowledge,rule applies fleet-wide,canonical ownership review,added to standards docs,reduce duplication
+review_template,local_repo,knowledge_or_control_tower,template reused across reviews,clarify structure and owner,listed in registry or assets,governance gain
