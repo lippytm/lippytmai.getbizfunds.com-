@@ -1,0 +1,9 @@
+drift_area,definition,score_range,review_frequency,primary_use,notes
+file_surface_drift,degree to which required or recommended files are missing or inconsistent,1-5,monthly,standards alignment,high score means more drift
+taxonomy_drift,degree to which shared terms are not used consistently,1-5,monthly,shared understanding,important for reuse
+lifecycle_drift,degree to which lifecycle naming diverges from shared guide,1-5,monthly,crm and workflow clarity,important for continuity
+prompt_naming_drift,degree to which prompt names diverge from shared naming convention,1-5,monthly,prompt governance,important for registry quality
+ownership_drift,degree to which canonical ownership is unclear or duplicated,1-5,monthly,governance and trust,reduces ambiguity when low
+status_drift,degree to which status surfaces are stale or inconsistent,1-5,monthly,fleet visibility,important for control-tower health
+asset_exposure_drift,degree to which reusable assets are hidden or inconsistently surfaced,1-5,monthly,reuse improvement,helps reduce duplicate work
+manifest_drift,degree to which repo metadata is incomplete or inconsistent,1-5,monthly,interoperability and rollups,important for scaling
