@@ -1,0 +1,8 @@
+dashboard_name,metric_name,definition,review_frequency,owner,primary_use,notes
+retention_loyalty_dashboard,relationship_health_score,measure of overall continuity and relationship strength,monthly,front_door,retention planning,high-level signal
+retention_loyalty_dashboard,churn_risk_visibility_score,measure of whether at-risk records are surfaced early,weekly,client_success,risk detection,important for timely action
+retention_loyalty_dashboard,renewal_readiness_score,measure of whether confidence factors for renewal are visible,monthly,client_success,renewal timing,avoid premature asks
+retention_loyalty_dashboard,loyalty_signal_score,measure of repeat-value and confidence signals,monthly,front_door,loyalty development,supports long-term value
+retention_loyalty_dashboard,referral_readiness_score,measure of whether relationship strength supports advocacy asks,monthly,front_door,referral timing,avoid weak asks
+retention_loyalty_dashboard,trust_continuity_score,measure of whether trust and continuity remain strong over time,monthly,client_success,relationship resilience,important after support or delivery issues
+retention_loyalty_dashboard,repeat_value_growth_rate,rate at which repeat-value opportunities become visible and usable,quarterly,front_door,growth quality,improves long-term ecosystem value
