@@ -1,0 +1,7 @@
+handoff_area,definition,score_range,review_frequency,primary_use,notes
+context_preservation,how well prior context is preserved in handoff,1-5,monthly,continuity and trust,important for humans and AI
+next_action_visibility,how clearly the next action is stated in handoff,1-5,monthly,execution quality,high leverage for continuity
+ownership_clarity,how clearly the next owner is visible,1-5,monthly,accountability,supports faster follow-through
+summary_quality,how readable and useful the summary is,1-5,monthly,scanability,important for busy operators
+risk_visibility,how clearly trust, churn, or support risks are surfaced,1-5,monthly,safer continuation,important for client experience
+dependency_visibility,how clearly external dependencies are stated,1-5,monthly,interoperability,helps reduce stalls
