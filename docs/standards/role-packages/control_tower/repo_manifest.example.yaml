@@ -1,0 +1,58 @@
+repo:
+  name: REPO_NAME
+  role: control_tower
+  maturity: active
+  owner: OWNER_OR_TEAM
+  last_reviewed: YYYY-MM-DD
+
+purpose:
+  summary: Fleet coordination and visibility repository.
+  primary_users:
+    - repo_owners
+    - operators
+    - maintainers
+    - governance_leads
+  primary_outcomes:
+    - visibility
+    - coordination
+    - standards_alignment
+    - rollups
+
+capabilities:
+  knowledge: yes
+  workflow: yes
+  analytics: yes
+  governance: yes
+
+inputs:
+  repos:
+    - front_door_repo
+    - workflow_repo
+    - product_repo
+    - knowledge_repo
+  assets:
+    - status_files
+    - manifests
+    - standards_docs
+
+outputs:
+  repos:
+    - front_door_repo
+    - workflow_repo
+    - product_repo
+    - knowledge_repo
+  assets:
+    - fleet_rollups
+    - audit_findings
+    - coordination_guidance
+
+shared_standards:
+  taxonomy_version: v1
+  lifecycle_version: v1
+  prompt_naming_version: v1
+  status_template_version: v1
+
+next_steps:
+  - Improve fleet rollup completeness
+  - Improve repo status consistency
+  - Improve visibility of next actions across repos
