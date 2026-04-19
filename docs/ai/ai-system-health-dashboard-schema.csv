@@ -1,0 +1,11 @@
+dashboard_name,metric_name,definition,review_frequency,owner,primary_use,notes
+repo_health_dashboard,role_clarity_score,score for visible repo role clarity,monthly,control_tower,repo scanability,from repo health scorecard
+repo_health_dashboard,status_freshness_score,score for status freshness and usefulness,monthly,control_tower,fleet visibility,important for rollups
+standards_dashboard,file_surface_drift_score,score for missing or inconsistent file surfaces,monthly,knowledge,standards drift review,high score indicates drift
+standards_dashboard,taxonomy_drift_score,score for shared terminology inconsistency,monthly,knowledge,standards alignment,important for portability
+crm_dashboard,next_action_quality_score,score for practical and timely next actions,weekly,front_door,crm continuity,important for CX
+crm_dashboard,satisfaction_signal_strength,score for visibility and freshness of satisfaction signals,monthly,front_door,client success and churn prevention,important for loyalty
+handoff_dashboard,context_preservation_score,score for how well handoff context is preserved,monthly,workflow,continuity and trust,important for humans and AI
+handoff_dashboard,ownership_clarity_score,score for how clear next owner is after handoff,monthly,workflow,execution quality,helps reduce stalls
+innovation_dashboard,promotion_readiness_score,score for maturity and readiness of experiments for promotion,monthly,innovation,innovation governance,reduces stranded lessons
+learning_dashboard,asset_discoverability_score,score for how easy reusable learning assets are to find,monthly,knowledge,learning reuse and onboarding,important for standards adoption
