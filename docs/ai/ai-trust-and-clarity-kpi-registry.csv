@@ -1,0 +1,9 @@
+kpi_name,domain,definition,review_frequency,primary_use,notes
+entry_clarity_score,trust_and_clarity,measure of how clearly first-touch value and next step are understood,monthly,front_door clarity,important for conversion and confidence
+service_confidence_score,trust_and_clarity,measure of how confident customers or clients feel during active service,monthly,client experience,improves continuity and retention
+ownership_visibility_score,trust_and_clarity,measure of how clearly the responsible owner is visible at each step,monthly,accountability and trust,reduces confusion
+progress_transparency_score,trust_and_clarity,measure of how visible progress and milestones are,monthly,delivery confidence,important for client trust
+support_trust_repair_score,trust_and_clarity,measure of how well trust is restored after problems,weekly,support recovery,important after negative experiences
+renewal_trust_readiness_score,trust_and_clarity,measure of whether trust is strong enough for renewal or deeper commitment,monthly,retention timing,avoid premature asks
+relationship_memory_quality,trust_and_clarity,measure of how well prior context is preserved and reused,monthly,continuity and personalization,important for AI CRM quality
+clarity_to_action_rate,trust_and_clarity,rate at which interactions end with a clear next action,weekly,continuity quality,high leverage signal
