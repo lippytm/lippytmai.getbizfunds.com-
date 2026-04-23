@@ -1,0 +1,93 @@
+{
+  "form_id": "strategy_intake_v1",
+  "title": "Strategy Session Intake",
+  "description": "Collects core information for higher-touch planning and implementation conversations.",
+  "fields": [
+    {
+      "name": "full_name",
+      "label": "Full Name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "email",
+      "label": "Email",
+      "type": "email",
+      "required": true
+    },
+    {
+      "name": "phone",
+      "label": "Phone",
+      "type": "tel",
+      "required": false
+    },
+    {
+      "name": "business_stage",
+      "label": "Business Stage",
+      "type": "select",
+      "required": true,
+      "options": ["idea", "startup", "active_business", "growth_stage", "enterprise"]
+    },
+    {
+      "name": "primary_goal",
+      "label": "Primary Goal",
+      "type": "select",
+      "required": true,
+      "options": ["funding", "ai_setup", "automation", "growth_strategy", "custom_buildout"]
+    },
+    {
+      "name": "urgency",
+      "label": "Urgency",
+      "type": "select",
+      "required": true,
+      "options": ["low", "normal", "high", "asap"]
+    },
+    {
+      "name": "budget_band",
+      "label": "Budget Band",
+      "type": "select",
+      "required": false,
+      "options": ["under_500", "500_2000", "2000_5000", "5000_plus", "not_sure"]
+    },
+    {
+      "name": "current_tools",
+      "label": "Current Tools or Systems",
+      "type": "textarea",
+      "required": false
+    },
+    {
+      "name": "challenge_summary",
+      "label": "Describe Your Main Challenge",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "name": "preferred_contact_method",
+      "label": "Preferred Contact Method",
+      "type": "select",
+      "required": true,
+      "options": ["email", "phone", "text"]
+    }
+  ],
+  "routing": {
+    "default_path": "strategy_review",
+    "rules": [
+      {
+        "if": { "primary_goal": "funding" },
+        "route_to": "funding_strategy"
+      },
+      {
+        "if": { "primary_goal": "ai_setup" },
+        "route_to": "ai_strategy"
+      },
+      {
+        "if": { "primary_goal": "automation" },
+        "route_to": "automation_strategy"
+      },
+      {
+        "if": { "primary_goal": "custom_buildout" },
+        "route_to": "premium_buildout_review"
+      }
+    ]
+  }
+}
